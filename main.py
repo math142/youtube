@@ -38,9 +38,9 @@ def recherche(driver,motcle):
         links+= [item.get_attribute('href')]
         title = driver.find_element_by_id('title')
         titre = title.get_attribute('title')
-        print(titre)
-    #for link in range(len(links)):
-     #   os.system('youtube-dl {0}'.format(links[link]))
+
+    for link in range(len(links)):
+        os.system('youtube-dl {0}'.format(links[link]))
         
 
     time.sleep(5)
